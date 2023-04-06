@@ -4,9 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build": "ng build --base-href='https://igor-stasiv.github.io/vfo-helper/'",
+    "deploy": "npx angular-cli-ghpages --dir=dist/vfo-helper"
   },
   "private": true,
   "dependencies": {
