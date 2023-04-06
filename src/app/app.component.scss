@@ -1,0 +1,47 @@
+.max-w-500 {
+  max-width: 500px;
+}
+
+.focus,
+.limit {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0.125rem;
+    height: 2.25rem;
+    width: 2.25rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateY(-50%);
+  }
+}
+
+.focus {
+  width: 60%;
+
+  &::after {
+    background-image: url("../assets/images/focus.png");
+  }
+}
+
+.limit {
+  width: 40%;
+
+  &::after {
+    background-image: url("../assets/images/limit.png");
+  }
+}
+
+.skill {
+  height: 6rem;
+  width: 6rem;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}

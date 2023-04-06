@@ -1,0 +1,29 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  background: url("../images/bg.webp") no-repeat center;
+  background-size: cover;
+}
+
+input {
+  height: 2.5rem;
+  outline: none;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+  }
+
+  &[type=number] {
+    -moz-appearance: textfield;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
