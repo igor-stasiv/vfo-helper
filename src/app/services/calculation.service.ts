@@ -31,11 +31,9 @@ export class CalculationService {
       }
 
       if (current === 35 || current === 20 || current === 12) {
-        if (used[current] >= limit) {
+        if (used[35] + used[20] + used[12] >= limit) {
           continue;
         }
-
-        limit--;
       }
 
       used[current]++;
@@ -47,10 +45,6 @@ export class CalculationService {
       }
 
       used[current]--;
-
-      if (current === 35 || current === 20 || current === 12) {
-        limit++;
-      }
     }
 
     return false;
